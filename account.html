@@ -17,18 +17,20 @@
         <!-- Nav Bar ---------------------------------->
         <div class="navbar">
             <div class="logo">
-                <img src="images/logo.png" width="125px">
+                <a href="index.html">
+                    <img src="images/logo.png" width="125px">
+                </a>
             </div>
             <nav>
                 <ul id="menuItems">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Products</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Contact</a></li>
-                    <li><a href="">Account</a></li>
+                    <li><a href="account.html">Account</a></li>
                 </ul>
             </nav>
-            <img src="images/cart.png" width="30px" height="30px">
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
             <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
         </div>
     </div>
@@ -43,8 +45,8 @@
                 <div class="col-2">
                     <div class="form-container">
                         <div class="form-btn">
-                            <span>Login</span>
-                            <span>Register</span>
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
                             <hr id="Indicator">
                         </div>
 
@@ -120,7 +122,27 @@
                 menuItems.style.maxHeight = "0px";
             }
         }
+    </script>
 
+    <!-- js for toggle Form------------------ -->
+
+    <script>
+
+        var loginForm = document.getElementById("loginForm");
+        var regForm = document.getElementById("regForm");
+        var Indicator = document.getElementById("Indicator");
+
+        function register() {
+            regForm.style.transform = "translateX(0)"
+            loginForm.style.transform = "translateX(0)"
+            Indicator.style.transform = "translateX(100px)"
+        } 
+
+        function login() {
+            regForm.style.transform = "translateX(300px)"
+            loginForm.style.transform = "translateX(300px)"
+            Indicator.style.transform = "translateX(0px)"
+        }
 
     </script>
 
