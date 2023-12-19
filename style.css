@@ -392,6 +392,10 @@ select:focus {
         font-size: 26px;
         line-height: 32px;
     }
+
+    .cart-info p {
+        display: none;
+    }
 }
 
 /* single products styles-------------------------------*/
@@ -502,9 +506,13 @@ td img {
 .total-price table {
     border-top: 3px solid #ff523b;
     width: 100%;
-    max-width: 350px;
+    max-width: 375px;
 }
 
 td:last-child {
+    text-align: right;
+}
+
+th:last-child {
     text-align: right;
 }
