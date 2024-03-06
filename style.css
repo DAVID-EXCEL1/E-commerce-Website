@@ -29,6 +29,10 @@ nav ul li {
     margin-right: 20px;
 }
 
+nav ul li a:hover {
+    color: #ff523b;
+}
+
 a {
     text-decoration: none;
     color: #555555;
