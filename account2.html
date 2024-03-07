@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,6 @@
     family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
     <div class="account-page">
         <div class="container">
@@ -22,17 +20,17 @@
                 <div class="col-2">
                     <div class="form-container">
                         <div class="form-btn">
-                            <span onclick="register()">Register</span>
+                            <span onclick="login()">Login</span>
                             <hr id="Indicator">
                         </div>
 
-                        <form id="regForm">
+                        <form id="loginForm">
                             <input type="text" placeholder="Username">
-                            <input type="email" placeholder="Email">
                             <input type="password" placeholder="Password">
-                            <button type="submit" class="btn">Register</button>
-                            <p id="login-account">Already have an account with RedStore</p>
-                            <a href="account2.html" id="click">Login here</a>
+                            <button type="submit" class="btn">Login</button>
+                            <!-- <a href="">Forgot password</a> -->
+                            <p id="login-account">Don't have an account with RedStore</p>
+                            <a href="account.html" id="click">Register here</a>
                         </form>
                     </div>
                 </div>
@@ -40,22 +38,5 @@
         </div>
     </div>
 
-
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
-        import { getAuth } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
-
-        const firebaseConfig = {
-            apiKey: "AIzaSyAHgz3YnmSCVoJWfNwCTBcyua4Hy9KlVI8",
-            authDomain: "e-commerce-a7c94.firebaseapp.com",
-            projectId: "e-commerce-a7c94",
-            storageBucket: "e-commerce-a7c94.appspot.com",
-            messagingSenderId: "38979654263",
-            appId: "1:38979654263:web:f4b89c0a2630531325ac72"
-        };
-
-        const app = initializeApp(firebaseConfig);
-    </script>
 </body>
-
 </html>
